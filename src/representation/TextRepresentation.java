@@ -1,5 +1,7 @@
 package representation;
 
+import com.sun.istack.internal.NotNull;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -51,7 +53,8 @@ public class TextRepresentation {
      * @return
      * @throws FileNotFoundException
      */
-    public static ArrayList<String> bagOfWord(String paragraph, String dictFilename) throws FileNotFoundException {
+    public static ArrayList<String> bagOfWord(String paragraph, String
+            dictFilename) throws FileNotFoundException {
         FileInputStream fis = new FileInputStream(dictFilename);
         Scanner scan = new Scanner(fis);
         ArrayList<String> vectors = new ArrayList<>();

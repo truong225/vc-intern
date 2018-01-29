@@ -46,8 +46,6 @@ public class SimilarityAlgorithm {
         return Math.pow(minkowskiDistance, (double) 1 / order);
     }
 
-    public double calculate
-
     public static void main(String[] args) {
         SimilarityAlgorithm similarityAlgorithm = new SimilarityAlgorithm();
         int[] A = {5, 1, 10};
